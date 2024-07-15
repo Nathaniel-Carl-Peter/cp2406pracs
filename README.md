@@ -1,3 +1,3 @@
-# CP1404 Practicals
+# CP2406 Practicals
 
-Practical work for IT@JCU CP1404
+Practical work for IT@JCU CP2406
