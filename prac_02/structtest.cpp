@@ -29,6 +29,7 @@ int main()
 
 	//C++ 17
 	cout << "Employee: " << anEmployee.firstInitial << anEmployee.lastInitial << endl;
-	cout << "Employee ID: " << anEmployee.employeeNumber << endl;
+	cout << "Number: " << anEmployee.employeeNumber << endl;
+	cout << "Salary: $" << anEmployee.salary << endl;
 
 }
