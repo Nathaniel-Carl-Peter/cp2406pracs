@@ -1,6 +1,12 @@
-import <iostream>;
-import <format>;
-import employee;
+// import <iostream>;
+// import <format>;
+// import employee;
+
+#include <iostream>
+#include <format>
+#include employee;
+
+// convert C++ 20 to 17
 
 using namespace std;
 
