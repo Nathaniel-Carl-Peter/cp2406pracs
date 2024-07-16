@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <format>
-#include "employee.cppm";
+#include "employee.cppm"
 
 // convert C++ 20 to 17
 
@@ -28,5 +28,7 @@ int main()
 	// cout << format("Salary: ${}", anEmployee.salary) << endl;
 
 	//C++ 17
-	cout << "Employee: {}{}" << anEmployee.firstInitial << anEmployee.lastInitial;
+	cout << "Employee: " << anEmployee.firstInitial << anEmployee.lastInitial << endl;
+	cout << "Employee ID: " << anEmployee.employeeNumber << endl;
+
 }
