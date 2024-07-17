@@ -18,8 +18,9 @@ int main()
 	anEmployee.lastInitial = 'D';
 	anEmployee.employeeNumber = 42;
 	anEmployee.salary = 80000;
+    // anEmployee.title = HR::Title:: Manager;
 
-	// output the values of an employee
+    	// output the values of an employee
 
 	// C++ 20
 	// cout << format("Employee: {}{}", anEmployee.firstInitial, 
@@ -31,5 +32,6 @@ int main()
 	cout << "Employee: " << anEmployee.firstInitial << anEmployee.lastInitial << endl;
 	cout << "Number: " << anEmployee.employeeNumber << endl;
 	cout << "Salary: $" << anEmployee.salary << endl;
+    // cout << anEmployee.title << endl;
 
 }
