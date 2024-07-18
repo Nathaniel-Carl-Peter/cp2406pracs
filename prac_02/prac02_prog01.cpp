@@ -11,26 +11,23 @@
 using namespace std;
 
 
-struct Employee {
+namespace HR{
 
-	// enum class Title{
-	// 	Manager,
-	// 	SeniorEngineer,
-	// 	Engineer
-	// }
+	struct Employee {
 
-	char firstInitial;
-	char lastInitial;
-	int  employeeNumber;
-	int  salary;
-	// Title title
-};
+		char firstInitial;
+		char lastInitial;
+		int  employeeNumber;
+		int  salary;
+		// Title title
+	};
 
+}
 
 int main()
 {
 	// create and populate an employee
-	Employee anEmployee;
+	HR::Employee anEmployee;
 	anEmployee.firstInitial = 'J';
 	anEmployee.lastInitial = 'D';
 	anEmployee.employeeNumber = 42;
