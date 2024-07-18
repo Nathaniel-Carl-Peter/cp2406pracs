@@ -13,15 +13,20 @@ using namespace std;
 
 namespace HR{
 
+	enum class Title{
+		Engineer,
+		SeniorEngineer,
+		Manager
+	};
+	
 	struct Employee {
 
 		char firstInitial;
 		char lastInitial;
 		int  employeeNumber;
 		int  salary;
-		// Title title
+		Title title
 	};
-
 }
 
 int main()
@@ -32,7 +37,7 @@ int main()
 	anEmployee.lastInitial = 'D';
 	anEmployee.employeeNumber = 42;
 	anEmployee.salary = 80000;
-    // anEmployee.title = HR::Title:: Manager;
+    anEmployee.title = HR::Title:: Manager;
 
     	// output the values of an employee
 
@@ -46,7 +51,7 @@ int main()
 	cout << "Employee: " << anEmployee.firstInitial << anEmployee.lastInitial << endl;
 	cout << "Number: " << anEmployee.employeeNumber << endl;
 	cout << "Salary: $" << anEmployee.salary << endl;
-    // cout << anEmployee.title << endl;
+    cout << anEmployee.title << endl;
 
 }
 
