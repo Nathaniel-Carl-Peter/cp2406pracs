@@ -25,7 +25,7 @@ namespace HR{
 		char lastInitial;
 		int  employeeNumber;
 		int  salary;
-		Title title
+		Title title;
 	};
 }
 
@@ -48,14 +48,28 @@ int main()
 	// cout << format("Salary: ${}", anEmployee.salary) << endl;
 
 	//C++ 17
-	cout << "Employee: " << anEmployee.firstInitial << anEmployee.lastInitial << endl;
+	cout << "Employee: " << anEmployee.firstInitial << 
+		anEmployee.lastInitial << endl;
 	cout << "Number: " << anEmployee.employeeNumber << endl;
 	cout << "Salary: $" << anEmployee.salary << endl;
-    cout << anEmployee.title << endl;
+    // cout << anEmployee.title << endl;
 
 }
 
-void print_title()
+void print_title(HR::Title t)
 {
+	switch (t)
+	{
+		using namespace HR;
+		case Title::Engineer:
+			cout << "Engineer" << endl;
+			break;
+		case Title::SeniorEngineer:
+			cout << "Senior Engineer" << endl;
+			break;
+		case Title::Manager:
+			cout << "Manager" << endl
+			break;
 
+	}
 }
