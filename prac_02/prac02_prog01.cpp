@@ -4,11 +4,28 @@
 
 #include <iostream>
 #include <format>
-#include "employee.cppm"
+// #include "employee.cppm"
 
 // convert C++ 20 to 17
 
 using namespace std;
+
+
+struct Employee {
+
+	// enum class Title{
+	// 	Manager,
+	// 	SeniorEngineer,
+	// 	Engineer
+	// }
+
+	char firstInitial;
+	char lastInitial;
+	int  employeeNumber;
+	int  salary;
+	// Title title
+};
+
 
 int main()
 {
@@ -33,5 +50,10 @@ int main()
 	cout << "Number: " << anEmployee.employeeNumber << endl;
 	cout << "Salary: $" << anEmployee.salary << endl;
     // cout << anEmployee.title << endl;
+
+}
+
+void print_title()
+{
 
 }
