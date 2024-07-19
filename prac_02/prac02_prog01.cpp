@@ -28,33 +28,7 @@ namespace HR{
 	};
 }
 
-int main()
-{
-	// create and populate an employee
-	HR::Employee anEmployee;
-	anEmployee.firstInitial = 'J';
-	anEmployee.lastInitial = 'D';
-	anEmployee.employeeNumber = 42;
-	anEmployee.salary = 80000;
-    anEmployee.title = HR::Title:: Manager;
 
-    	// output the values of an employee
-
-	// C++ 20
-	// cout << format("Employee: {}{}", anEmployee.firstInitial, 
-	// 	anEmployee.lastInitial) << endl;
-	// cout << format("Number: {}", anEmployee.employeeNumber) << endl;
-	// cout << format("Salary: ${}", anEmployee.salary) << endl;
-
-	//C++ 17
-	cout << "Employee: " << anEmployee.firstInitial << 
-		anEmployee.lastInitial << endl;
-	cout << "Number: " << anEmployee.employeeNumber << endl;
-	cout << "Salary: $" << anEmployee.salary << endl;
-    // cout << anEmployee.title << endl;
-	print_title(anEmployee.title);
-
-}
 
 void print_title(HR::Title t) {
 	switch (t) {
@@ -69,4 +43,32 @@ void print_title(HR::Title t) {
 		cout << "Manager" << endl;
 		break;
 	}
+}
+
+int main()
+{
+	// create and populate an employee
+	HR::Employee anEmployee;
+	anEmployee.firstInitial = 'J';
+	anEmployee.lastInitial = 'D';
+	anEmployee.employeeNumber = 42;
+	anEmployee.salary = 80000;
+    anEmployee.title = HR::Title::Manager;
+
+    	// output the values of an employee
+
+	// C++ 20
+	// cout << format("Employee: {}{}", anEmployee.firstInitial, 
+	// 	anEmployee.lastInitial) << endl;
+	// cout << format("Number: {}", anEmployee.employeeNumber) << endl;
+	// cout << format("Salary: ${}", anEmployee.salary) << endl;
+
+	//C++ 17
+	cout << "Employee: " << anEmployee.firstInitial << 
+		anEmployee.lastInitial << endl;
+	cout << "Number: " << anEmployee.employeeNumber << endl;
+	cout << "Salary: $" << anEmployee.salary << endl;
+    // cout << "Title: " << anEmployee.title << endl;
+	print_title(anEmployee.title);
+
 }
