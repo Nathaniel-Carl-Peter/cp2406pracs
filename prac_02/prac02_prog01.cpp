@@ -13,14 +13,13 @@ using namespace std;
 
 namespace HR{
 
-	enum class Title{
+	enum class Title {
 		Engineer,
 		SeniorEngineer,
 		Manager
 	};
 	
 	struct Employee {
-
 		char firstInitial;
 		char lastInitial;
 		int  employeeNumber;
@@ -53,23 +52,21 @@ int main()
 	cout << "Number: " << anEmployee.employeeNumber << endl;
 	cout << "Salary: $" << anEmployee.salary << endl;
     // cout << anEmployee.title << endl;
+	print_title(anEmployee.title);
 
 }
 
-void print_title(HR::Title t)
-{
-	switch (t)
-	{
-		using namespace HR;
-		case Title::Engineer:
-			cout << "Engineer" << endl;
-			break;
-		case Title::SeniorEngineer:
-			cout << "Senior Engineer" << endl;
-			break;
-		case Title::Manager:
-			cout << "Manager" << endl
-			break;
-
+void print_title(HR::Title t) {
+	switch (t) {
+	using namespace HR;
+	case Title::Engineer:
+		cout << "Engineer" << endl;
+		break;
+	case Title::SeniorEngineer:
+		cout << "SeniorEngineer" << endl;
+		break;
+	case Title::Manager:
+		cout << "Manager" << endl;
+		break;
 	}
 }
