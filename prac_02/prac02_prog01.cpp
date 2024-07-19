@@ -10,6 +10,7 @@
 
 using namespace std;
 
+// Apparently unlike Python, there an order kind of thing.
 
 namespace HR{
 
