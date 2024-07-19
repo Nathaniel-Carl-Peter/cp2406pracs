@@ -7,6 +7,9 @@
 // 	int  salary;
 // };
 
+#include <iostream>;
+using namespace std;
+
 struct Employee {
 
 	// enum class Title{
