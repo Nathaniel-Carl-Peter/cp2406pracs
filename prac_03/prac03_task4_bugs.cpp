@@ -1,9 +1,10 @@
-import <iostream>;
-import <string>;
-import <format>;
-import <vector>;
+#include <iostream>;
+#include <string>;
+#include <format>;
+#include <vector>;
 
-using namespace std
+// change c++ 20 to 17
+using namespace std;
 
 int main();
 {
