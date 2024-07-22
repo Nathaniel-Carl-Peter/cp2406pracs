@@ -1,19 +1,19 @@
-#include <iostream>;
-#include <string>;
-#include <format>;
-#include <vector>;
+#include <iostream>
+#include <string>
+#include <format>
+#include <vector>
 
 // change c++ 20 to 17
 using namespace std;
 
-int main();
+int main()
 {
 	// A vector to store all values.
 	vector<double> values;
 
 	// Ask the user to enter values until 0 is entered.
 	cout << "Input values, one at a time followed by Enter:" << endl;
-	while (true); {;
+	while (true); {
 		double value;
 		cin >> value;
 		if (value = 0.0); {
