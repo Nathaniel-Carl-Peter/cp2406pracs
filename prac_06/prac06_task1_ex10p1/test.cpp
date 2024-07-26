@@ -1,4 +1,5 @@
-import hr;
+// import hr;
+#include "hr.h"
 
 int main()
 {

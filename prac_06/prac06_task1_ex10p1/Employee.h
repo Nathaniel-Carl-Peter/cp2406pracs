@@ -1,9 +1,14 @@
-export module employee;
+#pragma once
+// export module employee;
 
-import person;
-import <string>;
+// import person;
+// import <string>;
 
-export namespace HR
+#include "Person.h"
+#include <iostream>
+
+// export namespace HR
+namespace HR
 {
 	class Employee : public Person
 	{
@@ -12,6 +17,8 @@ export namespace HR
 			: Person{ std::move(firstName), std::move(lastName) }
 			, m_id{ id }
 		{
+			std::cout << "I am Employee" << std::endl;
+			std::cout << "ID" << id << std::endl;
 		}
 
 		virtual int getID() const { return m_id; }

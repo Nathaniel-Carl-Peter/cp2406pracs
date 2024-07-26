@@ -1,8 +1,14 @@
-export module director;
+#pragma once
+// export module director;
 
-import employee;
+// import employee;
 
-export namespace HR
+#include "Employee.h"
+
+#include <iostream>
+
+
+namespace HR
 {
 	class Director : public Employee
 	{

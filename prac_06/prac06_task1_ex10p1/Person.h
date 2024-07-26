@@ -1,9 +1,14 @@
-export module person;
+#pragma once
+// export module person;
 
-import <string>;
-import <format>;
+// import <string>;
+#include <string>
+// import <format>;
+#include <iostream>
+#include <format>
 
-export namespace HR
+// export namespace HR
+namespace HR
 {
 	class Person
 	{
