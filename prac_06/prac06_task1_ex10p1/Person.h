@@ -21,7 +21,7 @@ namespace HR
 				firstName.substr(0,1) + lastName.substr(0,1) 
 				}
 			
-			{
+			{	
 				std::cout << firstName.substr(0,1) << lastName.substr(0,1) << std::endl;
 				// std::cout << "I am Person";
 				// std::cout << "firstName=" << firstName;
