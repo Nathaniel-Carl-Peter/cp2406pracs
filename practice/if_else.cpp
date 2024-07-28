@@ -1,11 +1,13 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
     int number;
 
     // Prompt user for input
-    std::cout << "Enter an integer: ";
-    std::cin >> number;
+    cout << "Enter an integer: ";
+    cin >> number;
 
     // Check if the number is positive, negative, or zero
     if (number > 0) {
