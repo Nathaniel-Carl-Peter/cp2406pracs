@@ -2,9 +2,11 @@
 // import <iostream>;
 // import <format>;
 
-#include 
+#include "Person.h"
 #include <iostream>
 #include <format>
+#include <string>
+#include <compare>
 using namespace std;
 
 int main()
