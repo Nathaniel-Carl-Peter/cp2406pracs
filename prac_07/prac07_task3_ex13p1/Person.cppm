@@ -1,10 +1,11 @@
-export module person;
+// export module person;
 
-import <string>;
-import <format>;
-import <compare>;
+#include <string>
+#include <format>
+#include <compare>
 
-export class Person
+// export class Person
+class Person
 {
 public:
 	// Two-parameter constructor automatically creates initials and
