@@ -1,9 +1,11 @@
 // export module person;
 
+#include <iostream>
 #include <string>
 #include <format>
 #include <compare>
 #include <ostream>
+using namespace std;
 
 // export class Person
 class Person
@@ -13,7 +15,8 @@ public:
 	// delegates the work to the three-parameter constructor.
 	Person(std::string firstName, std::string lastName)
 		: Person{ std::move(firstName), std::move(lastName),
-		std::format("{}{}", firstName[0], lastName[0]) }
+		// std::format("{}{}", firstName[0], lastName[0]) }
+		cout << firstName.substr(0,1) << lastName.substr(0,1)} << endl;
 	{
 	}
 
