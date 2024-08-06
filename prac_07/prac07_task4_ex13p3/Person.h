@@ -16,8 +16,9 @@ public:
 	Person(std::string firstName, std::string lastName)
 		: Person{ std::move(firstName), std::move(lastName),
 		// std::format("{}{}", firstName[0], lastName[0]) }
-		cout << firstName.substr(0,1) << lastName.substr(0,1)} << endl;
+		firstName.substr(0,1) + lastName.substr(0,1)}
 	{
+		std::cout << "Two-parameter constructer called. Inititals: " << m_initials << std::endl;
 	}
 
 	Person() = default;
@@ -40,14 +41,21 @@ public:
 
 	void output(std::ostream& output) const
 	{
-		output << std::format("{} {} ({})",
-			getFirstName(), getLastName(), getInitials()) << std::endl;
+		// output << std::format("{} {} ({})",
+		// getFirstName(), getLastName(), getInitials() << std::endl;
+		std::cout << getFirstName() << getLastName() << "(" + getInitials() + ")" << std::endl;
 	}
 
 	// Only this single line of code is needed to add support
 	// for all six comparison operators.
-	[[nodiscard]] auto operator<=>(const Person&) const = default;
-
+	// [[nodiscard]] auto operator<=>(const Person&) const = default;
+	bool operator<(const Person &other) const {return (this < &other);}
+	bool operator>(const Person &other) const {return (this > &other);}
+	bool operator<=(const Person &other) const {return (this <= &other);}
+	bool operator>=(const Person &other) const {return (this >= &other);}
+	bool operator==(const Person &other) const {return (this == &other);}
+	bool operator!=(const Person &other) const {return (this != &other);}
+	
 private:
 	std::string m_firstName;
 	std::string m_lastName;
