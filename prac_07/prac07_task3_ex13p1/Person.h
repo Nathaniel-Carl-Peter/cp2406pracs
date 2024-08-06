@@ -11,9 +11,13 @@ public:
 	// Two-parameter constructor automatically creates initials and
 	// delegates the work to the three-parameter constructor.
 	Person(std::string firstName, std::string lastName)
-		: Person{ std::move(firstName), std::move(lastName),
-		std::format("{}{}", firstName[0], lastName[0]) }
+		// : Person{ std::move(firstName), std::move(lastName),
+		// std::format("{}{}", firstName[0], lastName[0]) }
+		: Person{firstName, lastName,
+		firstName.substr(0,1) + lastName.substr(0,1)}
+
 	{
+		std::cout << "Two-parameter constructer called. Inititals: " << m_initials << std::endl;
 	}
 
 	Person() = default;
@@ -23,6 +27,7 @@ public:
 		, m_lastName{ std::move(lastName) }
 		, m_initials{ std::move(initials) }
 	{
+		std::cout << "Three-parameter constructer called. Inititals: " << m_initials << std::endl;
 	}
 
 	const std::string& getFirstName() const { return m_firstName; }
@@ -36,7 +41,7 @@ public:
 
 	//// Only this single line of code is needed to add support
 	//// for all six comparison operators.
-	[[nodiscard]] auto operator<=>(const Person&) const = default;
+	// [[nodiscard]] auto operator<=>(const Person&) const = default;
 
 private:
 	std::string m_firstName;
