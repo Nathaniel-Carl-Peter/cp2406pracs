@@ -1,9 +1,13 @@
 // export module person_database;
 
+#ifndef DATABASE_H
+#define DATABASE_H
+
 #include "Person.h"
 #include <vector>
 #include <ostream>
 #include <string_view>
+using namespace std;
 
 // export class Database
 class Database
