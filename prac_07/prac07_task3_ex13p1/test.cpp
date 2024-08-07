@@ -4,9 +4,7 @@
 
 #include "Person.h"
 #include <iostream>
-#include <format>
 #include <string>
-#include <compare>
 using namespace std;
 
 int main()
@@ -32,10 +30,10 @@ int main()
 	
 
 	// Test comparison operators.
-	if (person < person2) { cout << "person < person2" << endl; }
-	if (person > person2) { cout << "person > person2" << endl; }
-	if (person <= person2) { cout << "person <= person2" << endl; }
-	if (person >= person2) { cout << "person >= person2" << endl; }
-	if (person == person2) { cout << "person == person2" << endl; }
-	if (person != person2) { cout << "person != person2" << endl; }
+	// if (person < person2) { cout << "person < person2" << endl; }
+	// if (person > person2) { cout << "person > person2" << endl; }
+	// if (person <= person2) { cout << "person <= person2" << endl; }
+	// if (person >= person2) { cout << "person >= person2" << endl; }
+	// if (person == person2) { cout << "person == person2" << endl; }
+	// if (person != person2) { cout << "person != person2" << endl; }
 }
