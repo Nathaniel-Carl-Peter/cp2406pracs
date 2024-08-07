@@ -1,12 +1,12 @@
-export module associative_array;
+// export module associative_array;
 
-import <string>;
-import <string_view>;
-import <vector>;
-import <stdexcept>;
-import <format>;
+#include <string>
+#include <string_view>
+#include <vector>
+#include <stdexcept>
+#include <format>
 
-export template <typename T>
+// export template <typename T>
 class AssociativeArray
 {
 public:

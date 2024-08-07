@@ -1,6 +1,6 @@
-import person;
-import person_database;
-import <iostream>;
+#include "Person.h"
+#include "Database.h"
+#include <iostream>
 
 using namespace std;
 
