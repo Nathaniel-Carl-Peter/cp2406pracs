@@ -1,9 +1,12 @@
 // export module person;
+// #ifndef DATABASE_H
+// #define DATABASE_H
 
 #include <string>
 #include <format>
 #include <compare>
 #include <ostream>
+using namespace std;
 
 // export class Person
 class Person
