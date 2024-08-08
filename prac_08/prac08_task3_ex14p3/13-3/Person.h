@@ -39,7 +39,7 @@ public:
 	{
 		// output << std::format("{} {} ({})",
 		// 	getFirstName(), getLastName(), getInitials()) << std::endl;
-		output << getFirstName(), getLastName(), getInitials() << std::endl;
+		output << getFirstName() << ' ' << getLastName() << " (" << getInitials() << ")" << std::endl;
 	}
 
 	// Only this single line of code is needed to add support
