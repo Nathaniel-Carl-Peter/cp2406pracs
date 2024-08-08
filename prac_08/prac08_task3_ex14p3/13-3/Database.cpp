@@ -3,6 +3,7 @@
 #include <string>
 #include <iomanip>
 #include <sstream>
+#include "Person.h"
 using namespace std;
 
 void Database::add(Person person)

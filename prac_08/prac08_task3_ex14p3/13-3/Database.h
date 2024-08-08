@@ -1,11 +1,12 @@
 // export module person_database;
 
-#include "Person"
+#include "Person.h"
 #include <vector>
 #include <ostream>
 #include <string_view>
 
-export class Database
+// export class Database
+class Database
 {
 public:
 	// Adds the given person to the database.
