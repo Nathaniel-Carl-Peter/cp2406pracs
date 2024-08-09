@@ -1,6 +1,9 @@
+#include <cstddef>
+#include <fstream>
 #include <iostream>
 #include <stdexcept>
 #include <exception>
+#include <string>
 #include "Database.h"
 
 using namespace std;
