@@ -8,7 +8,7 @@ using namespace std;
 const int MAX_N = 1'000'000;
 
 template<typename T>
-void print(const vector<T>& vec){
+void my_print(const vector<T>& vec){
     for (const T& val: vec){
     cout << val << ", ";
     }
@@ -62,8 +62,28 @@ bool isCircularPrime(int n, const set<int>& primes_set) {
     
 }
 
-int main(int argc, char const * argv[]){
+int main(int argc, char const * argv[])
+{
+    cout << "Start\n";
 
+    auto primes = sieve_of_eratosthenes(MAX_N);
+    my_print(primes);
+
+    set<int> primes_set;
+    for (int n : primes)
+    {
+        if (isCircularPrime(n, primes_set))
+        {
+            res++;
+            cout << "n=" << n << ", res=" << res << endl;
+        }
+        
+    }
+    cout << "DONE" << endl;
+    cout << "Total Circular Primes: " << res << endl;
+
+    return 0;
+    
 }
 
 // Python version
