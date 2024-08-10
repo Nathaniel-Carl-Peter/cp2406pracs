@@ -26,7 +26,7 @@ vector<int> sieve_of_eratosthenes(int limit){
         {
             for (int i = p * p; i <= limit; i += p)
             {
-                prime[i] = false
+                prime[i] = false;
             }
             
         }
@@ -70,6 +70,13 @@ int main(int argc, char const * argv[])
     my_print(primes);
 
     set<int> primes_set;
+    for (const auto& val :primes)
+    {
+        primes_set.insert(val);
+    }
+    
+
+    int res = 0;
     for (int n : primes)
     {
         if (isCircularPrime(n, primes_set))
