@@ -55,15 +55,23 @@ vector<int> sieve_of_eratosthenes(int limit){
     return prime_numbers;
 }
 
+// def isCircularPrime(n):
 bool isCircularPrime(int n, const set<int>& primes_set) {
+    // s0 = list(str(n))
+    // a = np.array(s0)
+    // n_rolls = len(s0) - 1
     string s = to_string(n);
     int n_rolls = s.length() - 1;
+
+    // for _ in range(n_rolls):
     for (int i = 0; i < n_rolls; i++)
     {
         s += s[0];            // Append the first character to the end
         s.erase(s.begin());
 
         int new_n = stoi(s);
+
+        // if new_n not in primes_set:
         if (primes_set.find(new_n) == primes_set.end())
             // In C++, .end() is a member function of many container classes provided by the Standard Template Library (STL), 
             // such as std::vector, std::list, std::map, std::set, and more. 
@@ -75,6 +83,7 @@ bool isCircularPrime(int n, const set<int>& primes_set) {
     
 }
 
+// def main
 int main(int argc, char const * argv[])
 {
     cout << "Start\n";
