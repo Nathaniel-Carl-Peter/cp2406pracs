@@ -66,6 +66,8 @@ int main(int argc, char const * argv[]){
 
 }
 
+// Python version
+
 // from pprint import pprint
 
 // import numpy as np
