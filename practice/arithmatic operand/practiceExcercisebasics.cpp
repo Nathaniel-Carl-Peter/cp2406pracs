@@ -13,7 +13,6 @@ int main(){
     cout << "Integer division: 9/5 = " << 9/5 << endl;
     cout << "Mixed division: 9.0/5 = " << 9.0/5 << endl;
     cout << "Floating divison: 9.0/5.0 = " << 9.0 / 5.0 << endl;
-    
     cout << "Addition: " << add << endl;
     // 9 + 10 = 19
     cout << "Subtraction: "<< subtraction << endl;
