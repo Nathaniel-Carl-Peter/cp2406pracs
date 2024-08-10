@@ -1,5 +1,5 @@
-import associative_array;
-import <iostream>;
+#include "AssociativeArray.h"
+#include <iostream>
 
 using namespace std;
 

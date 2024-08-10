@@ -1,20 +1,21 @@
-export module person;
+// export module person;
 
-import <string>;
-import <format>;
-import <compare>;
-import <ostream>;
+#include <string>
+#include <format>
+#include <compare>
+#include <ostream>
 
-export class Person
+// export class Person
+class Person
 {
 public:
 	// Two-parameter constructor automatically creates initials and
 	// delegates the work to the three-parameter constructor.
 	Person(std::string firstName, std::string lastName)
 		: Person{ std::move(firstName), std::move(lastName),
-		std::format("{}{}", firstName[0], lastName[0]) }
-	{
-	}
+		// std::format("{}{}", firstName[0], lastName[0]) }
+		std::string(1, firstName[0]) + std::string(1, lastName[0])} {}
+	
 
 	Person() = default;
 
@@ -36,13 +37,14 @@ public:
 
 	void output(std::ostream& output) const
 	{
-		output << std::format("{} {} ({})",
-			getFirstName(), getLastName(), getInitials()) << std::endl;
+		// output << std::format("{} {} ({})",
+		// 	getFirstName(), getLastName(), getInitials()) << std::endl;
+		output << getFirstName() << ' ' << getLastName() << " (" << getInitials() << ")" << std::endl;
 	}
 
 	// Only this single line of code is needed to add support
 	// for all six comparison operators.
-	[[nodiscard]] auto operator<=>(const Person&) const = default;
+	// [[nodiscard]] auto operator<=>(const Person&) const = default;
 
 private:
 	std::string m_firstName;
