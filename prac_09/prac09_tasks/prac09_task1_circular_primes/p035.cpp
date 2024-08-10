@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// MAX_N = 1_000_000
 const int MAX_N = 1'000'000;
 
 template<typename T>
@@ -16,10 +17,22 @@ void my_print(const vector<T>& vec){
     cout << endl;
 }
 
+// def sieve_of_eratosthenes(limit):
 vector<int> sieve_of_eratosthenes(int limit){
-
+//# Initialize a boolean array "prime[0..n]" and fill all entries it as true.
+//  # A value in prime[i] will finally be false if i is Not a prime, else true.
+//    prime = [True for _ in range(limit + 1)]
     vector<bool> prime(limit + 1, true);
+    //     p = 2
 
+    // while p * p <= limit:
+    //     # If prime[p] is not changed, then it is a prime
+    //     if prime[p]:
+    //         # Updating all multiples of p
+    //         for i in range(p * p, limit + 1, p):
+    //             prime[i] = False
+
+    //         # Updating all multiples of p
     for (int p = 2; p * p <= limit; p++)
     {
         if (prime[p])
@@ -92,6 +105,11 @@ int main(int argc, char const * argv[])
     return 0;
     
 }
+//Prac 09 Complete
+
+
+
+
 
 // Python version
 
@@ -109,12 +127,12 @@ int main(int argc, char const * argv[])
 //     # A value in prime[i] will finally be false if i is Not a prime, else true.
 //     prime = [True for _ in range(limit + 1)]
 //     p = 2
-//     while p * p <= limit:
-//         # If prime[p] is not changed, then it is a prime
-//         if prime[p]:
-//             # Updating all multiples of p
-//             for i in range(p * p, limit + 1, p):
-//                 prime[i] = False
+    // while p * p <= limit:
+    //     # If prime[p] is not changed, then it is a prime
+    //     if prime[p]:
+    //         # Updating all multiples of p
+    //         for i in range(p * p, limit + 1, p):
+    //             prime[i] = False
 //         p += 1
 
 //     # Collecting all prime numbers
