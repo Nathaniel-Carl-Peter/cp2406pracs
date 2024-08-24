@@ -1,7 +1,7 @@
-import <vector>;
-import <string>;
-import <iostream>;
-import <functional>;
+#include <vector>
+#include <string>
+#include <iostream>
+#include <functional>
 
 using namespace std;
 

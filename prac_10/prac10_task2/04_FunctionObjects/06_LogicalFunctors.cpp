@@ -1,7 +1,7 @@
 #include <cmath>
-import <iostream>;
-import <vector>;
-import <functional>;
+#include <iostream>
+#include <vector>
+#include <functional>
 
 using namespace std;
 

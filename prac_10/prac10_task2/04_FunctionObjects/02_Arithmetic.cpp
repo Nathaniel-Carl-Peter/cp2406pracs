@@ -1,8 +1,8 @@
 #include <cmath>
-import <iostream>;
-import <vector>;
-import <span>;
-import <functional>;
+#include <iostream>
+#include <vector>
+#include <span>
+#include <functional>
 
 using namespace std;
 
