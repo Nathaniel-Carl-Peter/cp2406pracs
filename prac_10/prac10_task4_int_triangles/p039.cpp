@@ -4,6 +4,9 @@
 #include <map>
 #include <tuple>
 
+// MAX_P = 1_000
+// MAX_N = 1000//2
+// # MAX_N = 100
 const int MAX_P = 1000;
 const int MAX_N = 1000/2;
 
@@ -59,9 +62,7 @@ int main()
 
 
 // import numpy as np
-// MAX_P = 1_000
-// MAX_N = 1000//2
-// # MAX_N = 100
+
 
 // def main():
 //     res = {}
