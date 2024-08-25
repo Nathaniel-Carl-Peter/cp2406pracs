@@ -16,14 +16,16 @@ auto accumulateData(Iter begin, Iter end, StartValue startValue, Operation op)
 	return accumulated;
 }
 
-double geometricMean(span<const int> values)
+// double geometricMean(span<const int> values)
+double geometricMean(const vector<int> values)
 {
 	auto mult{ accumulateData(cbegin(values), cend(values), 1, multiplies<int>{}) };
 	return pow(mult, 1.0 / values.size());
 }
 
 // Using C++14 transparent operator functor
-double geometricMeanTransparent(span<const int> values)
+// double geometricMeanTransparent(span<const int> values)
+double geometricMeanTransparent(const vector<int> values)
 {
 	auto mult{ accumulateData(cbegin(values), cend(values), 1, multiplies<>{}) };
 	return pow(mult, 1.0 / values.size());
