@@ -7,8 +7,10 @@
 using namespace std;
 
 template<typename Matcher, typename MatchHandler>
-void findMatches(span<const int> values1, span<const int> values2,
-	Matcher matcher, MatchHandler handler)
+void findMatches(const vector <int> values1, 
+				const vector <int> values2,
+				Matcher matcher, 
+				MatchHandler handler)
 {
 	if (values1.size() != values2.size()) { return; } // Both vectors must be same size.
 
@@ -34,8 +36,9 @@ class Handler
 public:
 	void handleMatch(size_t position, int value1, int value2)
 	{
-		cout << format("Match found at position {} ({}, {})",
-			position, value1, value2) << endl;
+		// cout << format("Match found at position {} ({}, {})",
+		// 	position, value1, value2) << endl;
+		cout << "Match found at position" << position << value1 << value2 << endl;
 	}
 };
 
