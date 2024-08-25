@@ -8,7 +8,8 @@ using namespace std;
 
 void func(int num, string_view str)
 {
-	cout << format("func({}, {})", num, str) << endl;
+	// cout << format("func({}, {})", num, str) << endl;
+	cout << "func " << num <<" , "<< str;
 }
 
 int main()
