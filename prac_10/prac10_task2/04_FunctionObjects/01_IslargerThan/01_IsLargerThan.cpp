@@ -1,14 +1,18 @@
-#include <vector>
 // #include <span>
-#include <iostream>
 // #include <format>
 // #include <functional>
+#include <vector>
+#include <iostream>
+
 
 using namespace std;
 
 template<typename Matcher, typename MatchHandler>
-void findMatches(span<const int> values1, span<const int> values2,
-	Matcher matcher, MatchHandler handler)
+void findMatches(
+	const vector<int> &values1, 
+	const vector<int> &values2,
+	Matcher matcher, 
+	MatchHandler handler)
 {
 	if (values1.size() != values2.size()) { return; } // Both vectors must be same size.
 
@@ -21,8 +25,11 @@ void findMatches(span<const int> values1, span<const int> values2,
 
 void printMatch(size_t position, int value1, int value2)
 {
-	cout << format("Match found at position {} ({}, {})",
-		position, value1, value2) << endl;
+	// cout << format("Match found at position {} ({}, {})",
+	// 	position, value1, value2) << endl;
+	cout << "Match found at position = " << position << std::endl;
+	cout << "value1 = "  << value1 << std::endl;
+	cout << "value2 = "  << value2 << std::endl;
 }
 
 class IsLargerThan
